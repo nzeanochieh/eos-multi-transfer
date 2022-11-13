@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "@babel/runtime": "^7.19.4",
+    "buffer": "^6.0.3",
+    "ts-node": "^10.9.1",
+    "ual-anchor": "^1.3.0",
+    "ual-ledger": "^0.3.0",
+    "ual-plainjs-renderer": "^0.3.0",
+    "ual-scatter": "^0.1.6",
+    "ual-token-pocket": "^0.3.0"
+  },
+  "devDependencies": {
+    "typescript": "^4.8.4"
+  }
+}

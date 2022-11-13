@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./img/eos.png">
+    <title>Multi Transfers</title>
+
+    <script src='eosjs/eosjs-api.js'></script>
+    <script src='eosjs/eosjs-jsonrpc.js'></script>
+    <script src='eosjs/eosjs-jssig.js'></script>
+    <script src='eosjs/buffer.js'></script>
+   
+
+    <link rel="stylesheet" href="main.css">
+    
+</head>
+<body>
+
+  <div class="popup">
+     <div class="close-btn">&times;</div>
+     <div class="form">
+      <h2>Log in</h2>
+      <div class="form-element">
+        <label for="name">Account Name:</label>
+        <input type="text" id="name" placeholder="from account"  />
+      </div>
+
+      <div class="form-element">
+        <label for="key">Private Key:</label>
+        <input  type="text" id="key" placeholder="Enter Key"  />
+      </div>
+
+      <div class="form-element">
+       <button id="keyLogIn">Log In</button>
+      </div>
+
+      <div class="form-element" style="text-align: center;">
+        <button id="wallet">Wallet</button>
+        <div id="login2" style="text-align: center; color: green; width: 100%;"></div>
+       </div>
+     </div>
+  </div>
+
+  <div class = "notice"> All Transactions Completed </div>
+
+<div class = "container">
+
+<h1 style="text-align: center; font-size: 50px; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Hufi Tool</h1>
+<button id="login">Log in</button>
+<p id="logInStatus" style="text-align: center; margin-bottom: 5px;"></p>
+<button id="logout">Log out</button>
+
+
+<div class ="tableContainer">
+    <div id="tableHeaders">
+        <p class="accName">Send To:</p>
+        <p class="amount">Amount:</p>
+        <p class="memo">Memo:</p>
+    </div>
+    <div id="clear"><button>Clear</button></div>
+    <form>
+    <div class="rowContainer">
+    <div class="row">
+        <input class="accName" type="text">
+        <input class="amount" type="number" min="0" placeholder="0" step="any">
+        <input class="memo" type="text">
+    </div>
+    <div class="row">
+        <input class="accName" type="text">
+        <input class="amount" type="number" min="0" placeholder="0" step="any">
+        <input class="memo" type="text">
+    </div>
+    <div class="row">
+        <input class="accName" type="text">
+        <input class="amount" type="number" min="0" placeholder="0" step="any">
+        <input class="memo" type="text">
+    </div>
+    <div class="row">
+        <input class="accName" type="text">
+        <input class="amount" type="number" min="0" placeholder="0" step="any">
+        <input class="memo" type="text">
+    </div>
+    <div class="row">
+        <input class="accName" type="text">
+        <input class="amount" type="number" min="0" placeholder="0" step="any">
+        <input class="memo" type="text">
+    </div>
+    </div>
+  </form>
+  <button id ="addRow">Add Row</button>
+    </div>
+   
+    <button id ="submit" style="display: none ;">Submit All Transactions</button>
+    <button id ="submit2">Submit All Transactions</button>
+
+    <footer>Developed By Bukusoft Technologies</footer>
+</div>
+
+
+<script src="login.js"></script>
+
+<script src="bundle.js"></script>
+
+</body>
+
+</html>
